@@ -20,8 +20,8 @@ html {
   position: relative;
   width: 100%;
   height: 100%;
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
 }
 
 .content {
@@ -37,32 +37,92 @@ html {
 }
 
 .yts {
-  overflow: auto;
   position: absolute;
-  top: 78%;
+  /* top: 95%; */
   left: 50%;
   transform: translate(-50%, -50%);
   word-break: normal;
   text-align: center;
+  white-space: pre;
 }
 
-/* Media query for tablets and larger screens */
-@media screen and (min-width: 600px) {
-  /* .content {
-    width: 100%;
-  } */
+@media screen and (min-width: 280px) {
+  .yts {
+    top: 72%;
+    font-size: medium;
+  }
 }
 
-/* Media query for desktop screens */
-@media screen and (min-width: 992px) {
-  /* .content {
-    width: 60%;
-  } */
+@media screen and (min-width: 360px) {
+  .yts {
+    top: 82%;
+    font-size: 2em;
+  }
 }
 
-/* Media query for large desktop screens */
-@media screen and (min-width: 1200px) {
-  /* .content {
-    width: 40%;
-  } */
+@media screen and (min-width: 375px) {
+  .yts {
+    top: 95%;
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .yts {
+    top: 78%;
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .yts {
+    top: 76%;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .yts {
+    top: 78%;
+  }
+}
+
+@media screen and (min-width: 430px) {
+  .yts {
+    top: 78%;
+    font-size: xx-large;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .yts {
+    top: 126%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .yts {
+    top: 126%;
+    font-size: xxx-large;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .yts {
+    top: 117%;
+    font-size: xxx-large;
+  }
+}
+
+@media screen and (min-width: 912px) {
+  .yts {
+    top: 112%;
+    font-size: xxx-large;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .yts {
+    top: 126%;
+    font-size: xxx-large;
+  }
 }
