@@ -19,10 +19,44 @@
 
 .yts {
   font-family: 'impact-label';
-  font-size: xx-large;
   position: absolute;
-  top: 21.8em;
   left: 50%;
   transform: translate(-50%, -50%);
   white-space: pre;
+}
+
+/* iPhone 15 Plus, 15 Pro Max, 14 Pro Max */
+@media screen and (max-width: 430vw) and (max-height: 932vw) {
+  .yts {
+    top: 20.8%;
+    font-size: xx-large;
+  }
+}
+
+/* iPhone 14 Plus, 13 Pro Max, 12 Pro Max */
+@media screen and (max-width: 428vw) and (max-height: 926vw) {}
+
+/* iPhone 11, XR, XS Max */
+@media screen and (max-width: 414vw) and (max-height: 896vw) {}
+
+/* iPhone 8 Plus, 7 Plus, 6s Plus */
+@media screen and (max-width: 414vw) and (max-height: 736vw) {}
+
+/* iPhone 15 & 15 Pro, 14 Pro */
+@media screen and (max-width: 393vw) and (max-height: 852vw) {}
+
+/* iPhone 14, 13, 13 Pro, 12, 12 Pro */
+@media screen and (max-width: 390vw) and (max-height: 844vw) {}
+
+/* iPhone 13, 13 Mini, 12 Mini, 11 Pro Max, X, XS */
+@media screen and (max-width: 375vw) and (max-height: 812vw) {}
+
+/* iPhone SE 2022, SE 2020, 8, 7, 6s */
+@media screen and (max-width: 375vw) and (max-height: 667vw) {}
+
+/* iPhone SE */
+@media screen and (max-width: 320vw) and (max-height: 568vw) {
+  .yts {
+    font-size: x-large;
+  }
 }
