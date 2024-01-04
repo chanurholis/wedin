@@ -8,28 +8,43 @@
   padding: 0;
 }
 
+/* html, body {
+  background-color: aqua;
+} */
+
 .container {
   position: relative;
 }
 
 .content {
+  position: absolute;
   width: 100%;
   overflow: auto;
+  z-index: 1;
 }
 
 .yts {
   font-family: 'impact-label';
   position: absolute;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   white-space: pre;
+}
+
+.maps {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  z-index: 0;
 }
 
 /* iPhone 15 Plus, 15 Pro Max, 14 Pro Max */
 @media screen and (max-width: 430vw) and (max-height: 932vw) {
   .yts {
-    top: 20.8%;
-    font-size: xx-large;
+    top: 88vh;
+    /* font-size: 40px; */
   }
 }
 
@@ -37,7 +52,13 @@
 @media screen and (max-width: 428vw) and (max-height: 926vw) {}
 
 /* iPhone 11, XR, XS Max */
-@media screen and (max-width: 414vw) and (max-height: 896vw) {}
+@media screen and (max-width: 414vw) and (max-height: 896vw) {
+  .maps {
+    top: 281.4%;
+    width: 415.5px;
+    height: 294px;
+  }
+}
 
 /* iPhone 8 Plus, 7 Plus, 6s Plus */
 @media screen and (max-width: 414vw) and (max-height: 736vw) {}
