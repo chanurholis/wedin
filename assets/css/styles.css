@@ -8,7 +8,8 @@
   padding: 0;
 }
 
-/* html, body {
+/* html,
+body {
   background-color: aqua;
 } */
 
@@ -40,44 +41,62 @@
   z-index: 0;
 }
 
-/* iPhone 15 Plus, 15 Pro Max, 14 Pro Max */
-@media screen and (max-width: 430vw) and (max-height: 932vw) {
+/* iPhone SE */
+@media only screen and (max-width: 320vw) and (max-height: 568vw) {}
+
+/* iPhone SE 2022, SE 2020, 8, 7, 6s */
+@media only screen and (max-width: 375vw) and (max-height: 667vw) {}
+
+/* iPhone 13, 13 Mini, 12 Mini, 11 Pro Max, X, XS */
+@media only screen and (max-width: 375vw) and (max-height: 812vw) {}
+
+/* iPhone 14, 13, 13 Pro, 12, 12 Pro */
+@media only screen and (max-width: 390vw) and (max-height: 844vw) {
   .yts {
-    top: 88vh;
-    /* font-size: 40px; */
+    top: 85vh;
+    font-size: x-large;
   }
-}
 
-/* iPhone 14 Plus, 13 Pro Max, 12 Pro Max */
-@media screen and (max-width: 428vw) and (max-height: 926vw) {}
-
-/* iPhone 11, XR, XS Max */
-@media screen and (max-width: 414vw) and (max-height: 896vw) {
   .maps {
-    top: 281.4%;
+    top: 200%;
     width: 356px;
     height: 253px;
   }
 }
 
-/* iPhone 8 Plus, 7 Plus, 6s Plus */
-@media screen and (max-width: 414vw) and (max-height: 736vw) {}
-
 /* iPhone 15 & 15 Pro, 14 Pro */
-@media screen and (max-width: 393vw) and (max-height: 852vw) {}
+@media only screen and (max-width: 393vw) and (max-height: 852vw) {}
 
-/* iPhone 14, 13, 13 Pro, 12, 12 Pro */
-@media screen and (max-width: 390vw) and (max-height: 844vw) {}
+/* iPhone 8 Plus, 7 Plus, 6s Plus */
+@media only screen and (max-width: 414vw) and (max-height: 736vw) {}
 
-/* iPhone 13, 13 Mini, 12 Mini, 11 Pro Max, X, XS */
-@media screen and (max-width: 375vw) and (max-height: 812vw) {}
-
-/* iPhone SE 2022, SE 2020, 8, 7, 6s */
-@media screen and (max-width: 375vw) and (max-height: 667vw) {}
-
-/* iPhone SE */
-@media screen and (max-width: 320vw) and (max-height: 568vw) {
+/* iPhone 11, XR, XS Max */
+@media only screen and (max-width: 414vw) {
   .yts {
+    top: 85vh;
     font-size: x-large;
+  }
+
+  .maps {
+    top: 279%;
+    width: 356px;
+    height: 253px;
+  }
+}
+
+/* iPhone 14 Plus, 13 Pro Max, 12 Pro Max */
+@media only screen and (max-width: 428vw) and (max-height: 926vw) {}
+
+/* iPhone 15 Plus, 15 Pro Max, 14 Pro Max */
+@media only screen and (min-width: 430vw) and (min-height: 932vw) {
+  .yts {
+    top: 88vh;
+    font-size: small;
+  }
+
+  .maps {
+    top: 279%;
+    width: 356px;
+    height: 253px;
   }
 }
